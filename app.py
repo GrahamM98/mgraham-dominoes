@@ -6,6 +6,8 @@ from api.TestConnect import TestConnect
 app = Flask(__name__, static_url_path='', static_folder='frontend/build')
 CORS(app) #comment this on deployment
 
+from api.TestConnect import TestConnect
+
 api = Api(app)
 
 @app.route("/", defaults={'path':''})
