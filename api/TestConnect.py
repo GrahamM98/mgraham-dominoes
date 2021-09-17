@@ -4,7 +4,7 @@ class TestConnect(Resource):
     def get(self):
         return {
             'resultStatus': 'SUCCESS',
-            'message': 'Connected Successfully',
+            'message': "Connected Successfully"
             }
 
     def post(self):
